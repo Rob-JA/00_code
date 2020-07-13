@@ -1,0 +1,4 @@
+Ask user for height
+If height is less than 1 or greater than 8, repeat line 1
+Iterate starting from 1 up to height
+    For each iteration print n hashes, newline

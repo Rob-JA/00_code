@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Value</th>
+        </tr>
+        {% for row in index %}
+            <tr>
+                <td>{{ row['company'] }}</td>
+                <td>{{ row['symbol'] }}</td>
+                <td>{{ row['shares'] }}</td>
+                <td>{{ row['price'] }}</td>
+                <td>{{ row['value'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <table>
+        <tr>
+            <th>Cash Position</th>
+            <th>Total Stock Value</th>
+            <th>Total Portfolio Value</th>
+        </tr>
+        <tr>
+            <td>{{ cash }}</td>
+            <td>{{ total_value }}</td>
+            <td>{{ portfolio_value }}</td>
+        </tr>
+    </table>
+{% endblock %}

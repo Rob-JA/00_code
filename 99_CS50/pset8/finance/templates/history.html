@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Value</th>
+            <th>Action</th>
+            <th>Date/Time</th>
+        </tr>
+        {% for row in index %}
+            <tr>
+                <td>{{ row['company'] }}</td>
+                <td>{{ row['symbol'] }}</td>
+                <td>{{ row['shares'] }}</td>
+                <td>{{ row['price'] }}</td>
+                <td>{{ row['value'] }}</td>
+                <td>{{ row['purchasesale'] }}</td>
+                <td>{{ row['timestamp'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

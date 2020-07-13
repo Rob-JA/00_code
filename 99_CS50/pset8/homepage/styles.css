@@ -1,0 +1,57 @@
+/* Add a black background color to the top navigation. code sourced from https://www.w3schools.com/howto/howto_js_topnav.asp */
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #000000;
+    color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #000000;
+    color: white;
+}
+
+/* table collapsed border */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+/* indent text */
+h1, h2, h3, h4, h5, h6, p {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/* indent captions */
+p.ex1 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* align images in table */
+td.ex2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}

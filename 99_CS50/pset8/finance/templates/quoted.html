@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <p>
+            The stock price of {{ quote['name'] }} ({{ quote['symbol'] }}) is ${{ quote['price'] }}.
+        </p>
+    </form>
+{% endblock %}
